@@ -114,7 +114,7 @@ src/
 ├── utils/
 │   ├── make_system_prompt.py # Utilidad para generar prompts dinámicos
 │   ├── functions.py
-
+```
 
 ## Resultados Clave
 
