@@ -29,6 +29,9 @@ El proyecto se basa en los siguientes componentes principales:
      - `analisis`: Nodo que realiza análisis avanzado de los datos de ventas.
      - `__end__`: Finalización del flujo.
    - Este grafo asegura que las tareas fluyen correctamente entre los nodos para generar los resultados esperados.
+     - Diagrama del Flujo del Grafo. El siguiente diagrama representa el flujo del grafo utilizado en el proyecto:
+       ![Diagrama del Grafo](graph_image.png)
+
 
 2. **Herramientas (Tools)**:
    - **`get_all_purchases`**: Recupera todos los datos de ventas almacenados en una base de datos SQLite (`inventory.db`).
