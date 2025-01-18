@@ -125,6 +125,26 @@ def search_product_by_name(product_name):
         return {"id": row[0], "name": row[1], "quantity": row[2], "price": row[3]}
     else:
         return {"error": "Product not found"}
+    
+def get_all_products():
+    """Se obtienen todos los productos del almacén."""
+
+    response = fake_request("GET", "/purchases")
+    return response
+
+def get_product_by_name(product_name):
+    """
+    Busca producto por medio de nombre en el inventario.
+
+
+    Parámetros:
+        product_name (str): Nombre del producto a buscar.
+
+    Retorno:
+        dict: Detalles del producto si existe, o un mensaje indicando que no se encontró.    
+    """
+    response = fake_request("GET", f"/products/search/{product_name}")
+    return response
 
 def fake_request(method, url, data=None):
     """
